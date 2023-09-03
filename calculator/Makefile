@@ -3,7 +3,7 @@ grammar/antlr-4.13.0-complete.jar:
 	curl https://www.antlr.org/download/antlr-4.13.0-complete.jar \
 	-o grammar/antlr-4.13.0-complete.jar
 
-parser: grammar/antlr-4.13.0-complete.jar grammar/*
+parser: grammar/antlr-4.13.0-complete.jar grammar
 	go generate grammar/generate.go
 
 clean:

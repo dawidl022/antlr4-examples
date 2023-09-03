@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/dawidl022/antlrexamples/calculator/parser"
+	"github.com/dawidl022/antlr4-examples/calculator/parser"
 )
 
 type EvalVisitor struct {

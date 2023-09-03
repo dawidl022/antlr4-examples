@@ -5,8 +5,8 @@ import (
 
 	"github.com/antlr4-go/antlr/v4"
 
-	"github.com/dawidl022/antlrexamples/calculator/interpreter"
-	"github.com/dawidl022/antlrexamples/calculator/parser"
+	"github.com/dawidl022/antlr4-examples/calculator/interpreter"
+	"github.com/dawidl022/antlr4-examples/calculator/parser"
 )
 
 func main() {

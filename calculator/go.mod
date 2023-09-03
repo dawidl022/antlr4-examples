@@ -1,4 +1,4 @@
-module github.com/dawidl022/antlrexamples/calculator
+module github.com/dawidl022/antlr4-examples/calculator
 
 go 1.21.0
 
