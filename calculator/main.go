@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/antlr4-go/antlr/v4"
 	"os"
+
+	"github.com/antlr4-go/antlr/v4"
 
 	"github.com/dawidl022/antlr4-examples/calculator/interpreter"
 	"github.com/dawidl022/antlr4-examples/calculator/parser"
