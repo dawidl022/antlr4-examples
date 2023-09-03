@@ -1,0 +1,3 @@
+grammar Calculator;
+
+init: 'hello';
