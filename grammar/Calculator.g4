@@ -1,18 +1,20 @@
 grammar Calculator;
+import Lexer;
 
 init: (statement NEWLINE)*;
 
-statement: expr | assignment;
+statement: expr # printExpr | assignment # assign;
 
 assignment: ID '=' expr;
 
-expr: expr mulOp expr | expr addOp expr | '(' expr ')' | ID | INT;
+expr:
+	expr op = (MUL | DIV) expr		# MulDiv
+	| expr op = (ADD | SUB) expr	# AddSub
+	| '(' expr ')'					# parens
+	| ID							# id
+	| INT							# int;
 
-mulOp: '*' | '/';
-addOp: '+' | '-';
-
-ID: [a-zA-Z][0-9a-zA-Z]*;
-INT: [0-9]+;
-NEWLINE: '\r'? '\n';
-
-WS: [ \t]+ -> skip;
+MUL: '*';
+DIV: '/';
+ADD: '+';
+SUB: '-';
