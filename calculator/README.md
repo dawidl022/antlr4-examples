@@ -4,7 +4,8 @@ A simple calculator language interpreter supporting variable assignments and
 expression evaluations implemented using [ANLTR4](https://www.antlr.org/) in Go.
 
 Each statement is terminated by a newline, the results of evaluating statements
-that are expressions are printed.
+that are expressions are printed. A special statement: `clear`, clears any
+stored variables.
 
 ## Usage
 

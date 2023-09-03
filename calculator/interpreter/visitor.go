@@ -100,3 +100,8 @@ func (e *EvalVisitor) VisitInt(ctx *parser.IntContext) interface{} {
 	}
 	return val
 }
+
+func (e *EvalVisitor) VisitClear(ctx *parser.ClearContext) interface{} {
+	e.memory = make(map[string]int)
+	return nil
+}

@@ -3,7 +3,10 @@ import Lexer;
 
 init: (statement NEWLINE)*;
 
-statement: expr # printExpr | assignment # assign;
+statement:
+	'clear'			# clear
+	| expr			# printExpr
+	| assignment	# assign;
 
 assignment: ID '=' expr;
 
